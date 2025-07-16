@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "/index.txt"
+status = 200
