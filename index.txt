@@ -1,0 +1,920 @@
+
+<!doctype html>
+<!-- ✨ Built with Framer • https://www.framer.com/ -->
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="importmap" data-framer-importmap>{"imports":{"__framer-badge":"https://framerusercontent.com/modules/kr6mBIQPAjMiv35rQa3A/pERRjHDPh9IxXAn0rVsJ/PX9hIOIVM.js","__framer-not-found-page":"https://framer.com/m/framer/SitesNotFoundPage.js@1.4.0","valtio":"https://ga.jspm.io/npm:valtio@1.2.9/esm/index.js","@emotion/hash":"https://ga.jspm.io/npm:@emotion/hash@0.8.0/dist/hash.browser.esm.js","@motionone/dom":"https://ga.jspm.io/npm:@motionone/dom@10.12.0/dist/index.es.js","@motionone/easing":"https://ga.jspm.io/npm:@motionone/easing@10.13.1/dist/index.es.js","@motionone/utils":"https://ga.jspm.io/npm:@motionone/utils@10.12.0/dist/index.es.js","@react-three/drei":"https://ga.jspm.io/npm:@react-three/drei@8.3.1/index.js","@react-three/fiber":"https://ga.jspm.io/npm:@react-three/fiber@7.0.24/dist/react-three-fiber.esm.js","airtable":"https://ga.jspm.io/npm:airtable@0.11.1/lib/airtable.js","canvas-confetti":"https://ga.jspm.io/npm:canvas-confetti@1.4.0/src/confetti.js","color-diff":"https://ga.jspm.io/npm:color-diff@1.2.0/lib/index.js","color-hash":"https://ga.jspm.io/npm:color-hash@2.0.1/dist/color-hash.js","framer-motion-3d":"https://ga.jspm.io/npm:framer-motion-3d@6.0.0-beta.8/dist/es/index.mjs","framesync":"https://ga.jspm.io/npm:framesync@6.1.2/dist/es/index.mjs","motion":"https://ga.jspm.io/npm:motion@10.12.0/dist/main.es.js","popmotion":"https://ga.jspm.io/npm:popmotion@11.0.3/dist/es/index.mjs","react-confetti":"https://ga.jspm.io/npm:react-confetti@6.0.1/dist/react-confetti.min.js","shopify-buy":"https://ga.jspm.io/npm:shopify-buy@2.14.0/index.js","style-value-types":"https://ga.jspm.io/npm:style-value-types@5.1.0/dist/es/index.mjs","three":"https://ga.jspm.io/npm:three@0.136.0/build/three.module.js","tinycolor2":"https://ga.jspm.io/npm:tinycolor2@1.4.2/tinycolor.js","zustand":"https://ga.jspm.io/npm:zustand@3.7.1/esm/index.js","zustand/middleware":"https://ga.jspm.io/npm:zustand@3.7.1/esm/middleware.js","#framer/local/componentPresets/componentPresets/componentPresets.js":"https://framerusercontent.com/modules/c8hEw4ZdEPuPQGV9B9pM/UtWQPXK85kCiocTNzXl4/componentPresets.js","#framer/local/css/CoiWMnPhg/CoiWMnPhg.js":"https://framerusercontent.com/modules/ritgWFOf1dXMsTWkiunk/AzMyu9ejS1bTg3kD8n9G/CoiWMnPhg.js","#framer/local/css/Hr6jxz9Uv/Hr6jxz9Uv.js":"https://framerusercontent.com/modules/dfDT4LzktJcLbxfcRth9/ihf3Yum7wF8MWhTMRqxO/Hr6jxz9Uv.js","#framer/local/css/NBqNu2il5/NBqNu2il5.js":"https://framerusercontent.com/modules/elUepldbpalj5U3PkMbT/a6mp9wyYTP3gIyUQXbrx/NBqNu2il5.js","#framer/local/css/txskNVrCH/txskNVrCH.js":"https://framerusercontent.com/modules/uZoTwJfsCyHkyBp8fqSM/BTB3nw55RM7X8c0WyPCU/txskNVrCH.js","#framer/local/css/UwTuH0hcj/UwTuH0hcj.js":"https://framerusercontent.com/modules/rBLQtEzJnDoFaer3lMHx/mhzPRuPadY2BpXBNyetK/UwTuH0hcj.js","#framer/local/css/xhrb0W1UI/xhrb0W1UI.js":"https://framerusercontent.com/modules/3hxvsw1dFV5seiC43Hgc/QmrSSxJmlB9RGlkQeV9R/xhrb0W1UI.js","#framer/local/screen/augiA20Il/augiA20Il.js":"https://framerusercontent.com/modules/l1lmz71w2gpBycrE0L0n/NTo2Hr0TIMME4uLjPBCq/augiA20Il.js","#framer/local/screen/bBFZpT_BG/bBFZpT_BG.js":"https://framerusercontent.com/modules/yvyMqnD8o5MTv6YA4rcv/tvgjyTiPZ3r44RJ8eM4G/bBFZpT_BG.js","#framer/local/screen/fpub1cBZd/fpub1cBZd.js":"https://framerusercontent.com/modules/wh8g8D30khOo6tSSPI0d/LGvBoUGHOs4kld0LNcbw/fpub1cBZd.js","#framer/local/screen/nNOJsMFzV/nNOJsMFzV.js":"https://framerusercontent.com/modules/sbO4GlpFfq7t24dbsux0/5WGVVpuyVOSR2kjL6Lhg/nNOJsMFzV.js","#framer/local/screen/pD_rnA7Kl/pD_rnA7Kl.js":"https://framerusercontent.com/modules/ptE5Z0oV4nnkO34SErWb/FnQFdUUjuUWBLSClQCpg/pD_rnA7Kl.js","#framer/local/screen/Qy5juwrx0/Qy5juwrx0.js":"https://framerusercontent.com/modules/1qvdKKsUoAfdx7n6Tjdt/LuFW91pkkNh827srxpoA/Qy5juwrx0.js","#framer/local/screen/t1oSjfC2q/t1oSjfC2q.js":"https://framerusercontent.com/modules/ce3Uj60GKfL3q7GoBPqw/MCTRtegHMfNoCup0qJ4T/t1oSjfC2q.js","#framer/local/screen/uxL6_hi27/uxL6_hi27.js":"https://framerusercontent.com/modules/p8y6DVnUgm4X81Mb5W1k/ERjW96LBcsp9iqfffmNI/uxL6_hi27.js","#framer/local/screen/w3Y1g1_96/w3Y1g1_96.js":"https://framerusercontent.com/modules/k50JdfNlLNar2DaBIIwJ/TOC1cxHsEFiXF4NZupxv/w3Y1g1_96.js","#framer/local/siteMetadata/siteMetadata/siteMetadata.js":"https://framerusercontent.com/modules/lmyZkqEUZubi9FGAwvA2/gSkM5xnDSDq3n3wH4MiW/siteMetadata.js","#framer/local/webPageMetadata/augiA20Il/augiA20Il.js":"https://framerusercontent.com/modules/e5chfmeVXIcsJSwMwK8G/5tk2xsPXhH1MDP5lGj4e/augiA20Il.js","#framer/local/webPageMetadata/bBFZpT_BG/bBFZpT_BG.js":"https://framerusercontent.com/modules/uwztQR2CZTUD8A4KH31v/pgA7mzsXchJGvfoRuIdo/bBFZpT_BG.js","#framer/local/webPageMetadata/fpub1cBZd/fpub1cBZd.js":"https://framerusercontent.com/modules/8uzqdO7TJCbtEPbQsTA8/7Rvz3yrV8BlCwYrysskZ/fpub1cBZd.js","#framer/local/webPageMetadata/nNOJsMFzV/nNOJsMFzV.js":"https://framerusercontent.com/modules/vY5cdBv0KSS6RLL1k0vo/50Gbw7WSSTB8Zd7aXv4G/nNOJsMFzV.js","#framer/local/webPageMetadata/pD_rnA7Kl/pD_rnA7Kl.js":"https://framerusercontent.com/modules/5cmobvHc7SHD74s3C6cm/DuWjJUwKDWnol3nrkoQR/pD_rnA7Kl.js","#framer/local/webPageMetadata/Qy5juwrx0/Qy5juwrx0.js":"https://framerusercontent.com/modules/jFwIBYIUUmya4z5YZgtw/fAUnEp7uqYPtQUI2VkVT/Qy5juwrx0.js","#framer/local/webPageMetadata/t1oSjfC2q/t1oSjfC2q.js":"https://framerusercontent.com/modules/2gWfNTBHplH8KTAXwXLg/Uceiu6ksNM3fa7QZpzBP/t1oSjfC2q.js","#framer/local/webPageMetadata/uxL6_hi27/uxL6_hi27.js":"https://framerusercontent.com/modules/pNtobyfDQN4an0ujzvEj/ITzhOVNduKlaiSjV8qtl/uxL6_hi27.js","#framer/local/webPageMetadata/w3Y1g1_96/w3Y1g1_96.js":"https://framerusercontent.com/modules/qsYKtjvLSfTf5xoDRW9v/oGsYCpMNhJHd1NrNo9kR/w3Y1g1_96.js","#framer/local/codeFile/lpHykKZ/Remove_framer_badge.js":"https://framerusercontent.com/modules/ZjYwrGVcwe352EfchTYs/gOpYEggW6UYlICEHbMRe/Remove_framer_badge.js","framer":"https://app.framerstatic.com/framer.Z2MZKKHP.mjs","framer-motion":"https://app.framerstatic.com/framer-motion.5EXT2AMG.mjs","react":"https://ga.jspm.io/npm:react@18.2.0/index.js","react-dom":"https://ga.jspm.io/npm:react-dom@18.2.0/index.js","react-dom/client":"https://ga.jspm.io/npm:react-dom@18.2.0/client.js","react-dom/server":"https://ga.jspm.io/npm:react-dom@18.2.0/server.browser.js","react/jsx-runtime":"https://ga.jspm.io/npm:react@18.2.0/jsx-runtime.js"},"scopes":{"https://ga.jspm.io/":{"proxy-compare":"https://ga.jspm.io/npm:proxy-compare@2.0.2/dist/index.modern.js","valtio/vanilla":"https://ga.jspm.io/npm:valtio@1.2.9/esm/vanilla.js","@babel/runtime/helpers/esm/defineProperty":"https://ga.jspm.io/npm:@babel/runtime@7.16.7/helpers/esm/defineProperty.js","@babel/runtime/helpers/esm/extends":"https://ga.jspm.io/npm:@babel/runtime@7.16.7/helpers/esm/extends.js","@chevrotain/utils":"https://ga.jspm.io/npm:@chevrotain/utils@9.1.0/lib/src/api.js","@motionone/animation":"https://ga.jspm.io/npm:@motionone/animation@10.12.0/dist/index.es.js","@motionone/easing":"https://ga.jspm.io/npm:@motionone/easing@10.12.0/dist/index.es.js","@motionone/generators":"https://ga.jspm.io/npm:@motionone/generators@10.12.0/dist/index.es.js","@motionone/types":"https://ga.jspm.io/npm:@motionone/types@10.12.0/dist/index.es.js","@react-spring/animated":"https://ga.jspm.io/npm:@react-spring/animated@9.4.1/dist/react-spring-animated.esm.js","@react-spring/core":"https://ga.jspm.io/npm:@react-spring/core@9.4.1/dist/react-spring-core.esm.js","@react-spring/rafz":"https://ga.jspm.io/npm:@react-spring/rafz@9.4.1/dist/react-spring-rafz.esm.js","@react-spring/shared":"https://ga.jspm.io/npm:@react-spring/shared@9.4.1/dist/react-spring-shared.esm.js","@react-spring/three":"https://ga.jspm.io/npm:@react-spring/three@9.4.1/dist/react-spring-three.esm.js","@react-spring/types/animated":"https://ga.jspm.io/npm:@react-spring/types@9.4.1/animated.js","@react-spring/types/interpolation":"https://ga.jspm.io/npm:@react-spring/types@9.4.1/interpolation.js","@use-gesture/core":"https://ga.jspm.io/npm:@use-gesture/core@10.2.4/dist/use-gesture-core.esm.js","@use-gesture/core/actions":"https://ga.jspm.io/npm:@use-gesture/core@10.2.4/actions/dist/use-gesture-core-actions.esm.js","@use-gesture/core/types":"https://ga.jspm.io/npm:@use-gesture/core@10.2.4/types/dist/use-gesture-core-types.esm.js","@use-gesture/core/utils":"https://ga.jspm.io/npm:@use-gesture/core@10.2.4/utils/dist/use-gesture-core-utils.esm.js","@use-gesture/react":"https://ga.jspm.io/npm:@use-gesture/react@10.2.4/dist/use-gesture-react.esm.js","abort-controller":"https://ga.jspm.io/npm:abort-controller@3.0.0/browser.js","abortcontroller-polyfill/dist/cjs-ponyfill":"https://ga.jspm.io/npm:abortcontroller-polyfill@1.7.3/dist/cjs-ponyfill.js","bidi-js":"https://ga.jspm.io/npm:bidi-js@1.0.2/dist/bidi.js","buffer":"https://ga.jspm.io/npm:@jspm/core@2.0.0-beta.14/nodelibs/browser/buffer.js","chevrotain":"https://ga.jspm.io/npm:chevrotain@9.1.0/lib_esm/api_esm.mjs","debounce":"https://ga.jspm.io/npm:debounce@1.2.1/index.js","detect-gpu":"https://ga.jspm.io/npm:detect-gpu@3.1.30/dist/detect-gpu.esm.js","fast-deep-equal":"https://ga.jspm.io/npm:fast-deep-equal@3.1.3/index.js","fflate":"https://ga.jspm.io/npm:fflate@0.6.10/esm/browser.js","framesync":"https://ga.jspm.io/npm:framesync@6.0.1/dist/es/index.mjs","hey-listen":"https://ga.jspm.io/npm:hey-listen@1.0.8/dist/index.js","ktx-parse":"https://ga.jspm.io/npm:ktx-parse@0.2.2/dist/ktx-parse.modern.js","lodash.omit":"https://ga.jspm.io/npm:lodash.omit@4.5.0/index.js","lodash.pick":"https://ga.jspm.io/npm:lodash.pick@4.4.0/index.js","lodash/get":"https://ga.jspm.io/npm:lodash@4.17.21/get.js","lodash/isArray":"https://ga.jspm.io/npm:lodash@4.17.21/isArray.js","lodash/isFunction":"https://ga.jspm.io/npm:lodash@4.17.21/isFunction.js","lodash/isNil":"https://ga.jspm.io/npm:lodash@4.17.21/isNil.js","lodash/isNumber":"https://ga.jspm.io/npm:lodash@4.17.21/isNumber.js","lodash/isPlainObject":"https://ga.jspm.io/npm:lodash@4.17.21/isPlainObject.js","lodash/isString":"https://ga.jspm.io/npm:lodash@4.17.21/isString.js","lodash/keys":"https://ga.jspm.io/npm:lodash@4.17.21/keys.js","mmd-parser":"https://ga.jspm.io/npm:mmd-parser@1.0.4/build/mmdparser.js","node-fetch":"https://ga.jspm.io/npm:node-fetch@2.6.7/browser.js","object-assign":"https://ga.jspm.io/npm:object-assign@4.1.1/index.js","opentype.js":"https://ga.jspm.io/npm:opentype.js@1.3.4/dist/opentype.module.js","potpack":"https://ga.jspm.io/npm:potpack@1.0.2/index.mjs","process":"https://framer.com/m/framer/empty.js@0.1.0","prop-types":"https://ga.jspm.io/npm:prop-types@15.8.0/index.js","react-composer":"https://ga.jspm.io/npm:react-composer@5.0.2/es/index.js","react-merge-refs":"https://ga.jspm.io/npm:react-merge-refs@1.1.0/dist/react-merge-refs.esm.js","react-reconciler":"https://ga.jspm.io/npm:react-reconciler@0.26.2/index.js","react-use-measure":"https://ga.jspm.io/npm:react-use-measure@2.1.1/dist/web.js","regexp-to-ast":"https://ga.jspm.io/npm:regexp-to-ast@0.5.0/lib/regexp-to-ast.js","scheduler":"https://ga.jspm.io/npm:scheduler@0.23.0/index.js","style-value-types":"https://ga.jspm.io/npm:style-value-types@5.0.0/dist/es/index.mjs","three-mesh-bvh":"https://ga.jspm.io/npm:three-mesh-bvh@0.5.3/src/index.js","three-stdlib":"https://ga.jspm.io/npm:three-stdlib@2.6.4/index.js","three/examples/js/libs/stats.min":"https://ga.jspm.io/npm:three@0.136.0/examples/js/libs/stats.min.js","troika-three-text":"https://ga.jspm.io/npm:troika-three-text@0.44.0/dist/troika-three-text.esm.js","troika-three-utils":"https://ga.jspm.io/npm:troika-three-utils@0.44.0/dist/troika-three-utils.esm.js","troika-worker-utils":"https://ga.jspm.io/npm:troika-worker-utils@0.44.0/dist/troika-worker-utils.esm.js","tslib":"https://ga.jspm.io/npm:tslib@2.4.0/tslib.es6.js","use-asset":"https://ga.jspm.io/npm:use-asset@1.0.4/dist/index.cjs.js","zstddec":"https://ga.jspm.io/npm:zstddec@0.0.2/dist/zstddec.js","zustand":"https://ga.jspm.io/npm:zustand@3.6.8/esm/index.js","fs":"https://framer.com/m/framer/empty.js@0.1.0"},"https://ga.jspm.io/npm:framer-motion-3d@6.0.0-beta.8/":{"tslib":"https://ga.jspm.io/npm:tslib@2.3.1/tslib.es6.js"}}}</script>
+    <script async src="https://ga.jspm.io/npm:es-module-shims@1.6.3/dist/es-module-shims.js" crossorigin="anonymous" data-framer-es-module-shims></script>
+    
+    <!-- Start of headStart -->
+    
+    <!-- End of headStart -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content="Framer 6aebf05">
+    <title>My Framer Site</title>
+    <meta name="description" content="Made with Framer" />
+    <meta name="framer-search-index" content="https://framerusercontent.com/sites/2zsNhvjcwxOp7sM30JKAd4/searchIndex-Tp697cRzPGil.json">
+    <link href="https://framerusercontent.com/sites/icons/default-favicon-light.v1.png" rel="icon" media="(prefers-color-scheme: light)">
+    <link href="https://framerusercontent.com/sites/icons/default-favicon-dark.v1.png" rel="icon" media="(prefers-color-scheme: dark)">
+    <link rel="apple-touch-icon" href="https://framerusercontent.com/sites/icons/default-touch-icon.v3.png"/>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="My Framer Site">
+    <meta property="og:description" content="Made with Framer">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My Framer Site">
+    <meta name="twitter:description" content="Made with Framer">
+    <style data-framer-css-ssr>
+        html, body, #main {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        * {
+            box-sizing: border-box;
+            -webkit-font-smoothing: inherit;
+        }
+        h1, h2, h3, h4, h5, h6, p, figure {
+            margin: 0;
+        }
+        body, input, textarea, select, button { font-size: 12px; font-family: sans-serif; }
+        body {  @supports (color: color(display-p3 1 1 1)) {  } }
+@media (prefers-color-scheme: dark) { body {  @supports (color: color(display-p3 1 1 1)) {  } } }
+        
+        #__framer-badge-container {
+            position: fixed;
+            bottom: 0;
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: right;
+            pointer-events: none;
+            z-index: 314159;
+        }
+        .__framer-badge { pointer-events: auto; }
+        /* latin-ext */
+@font-face {
+  font-family: 'Besley';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/besley/v21/PlIhFlO1MaNwaNGWUC92IOH_mtG4fYTBed1iFcOl.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Besley';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/besley/v21/PlIhFlO1MaNwaNGWUC92IOH_mtG4fYTBedNiFQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Buenard';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/buenard/v21/OD5cuM6Cyma8FnnsJTzfWLAhv7i92spOLH_-ghclfg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Buenard';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/buenard/v21/OD5cuM6Cyma8FnnsJTzfWLAhv7i92spOLH_wghc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cantata One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cantataone/v15/PlI5Fl60Nb5obNzNe2jslWxNvcGAfA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cantata One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cantataone/v15/PlI5Fl60Nb5obNzNe2jslWxDvcE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v19/wlp2gwHKFkZgtmSR3NB0oRJfYAhTM_I.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v19/wlp2gwHKFkZgtmSR3NB0oRJfYQhTM_I.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v19/wlp2gwHKFkZgtmSR3NB0oRJfbwhT.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inclusive Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inclusivesans/v3/0nk8C9biPuwflXcJ46P4PGWE08T-gfZusL0kQqtfcBt95mZsQ0Y.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inclusive Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inclusivesans/v3/0nk8C9biPuwflXcJ46P4PGWE08T-gfZusL0kQqtfcBt952ZsQ0Y.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inclusive Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inclusivesans/v3/0nk8C9biPuwflXcJ46P4PGWE08T-gfZusL0kQqtfcBt96WZs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inder';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inder/v14/w8gUH2YoQe8_4sqzrQ6_3Q.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inder';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inder/v14/w8gUH2YoQe8_4sq9rQ4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Inknut Antiqua';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inknutantiqua/v15/Y4GSYax7VC4ot_qNB4nYpBdaKUUF4J3BRw.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inknut Antiqua';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inknutantiqua/v15/Y4GSYax7VC4ot_qNB4nYpBdaKUUK4J3BRw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inknut Antiqua';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inknutantiqua/v15/Y4GSYax7VC4ot_qNB4nYpBdaKUUE4J0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Inknut Antiqua';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inknutantiqua/v15/Y4GRYax7VC4ot_qNB4nYpBdaKU2_xYj_Zhs4YA.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inknut Antiqua';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inknutantiqua/v15/Y4GRYax7VC4ot_qNB4nYpBdaKU2_xYjwZhs4YA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inknut Antiqua';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inknutantiqua/v15/Y4GRYax7VC4ot_qNB4nYpBdaKU2_xYj-Zhs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inria Serif';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inriaserif/v17/fC16PYxPY3rXxEndZJAzN3SuT5TAvlGFb1xN.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inria Serif';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inriaserif/v17/fC16PYxPY3rXxEndZJAzN3SuT5TAvl-Fbw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inria Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inriaserif/v17/fC1lPYxPY3rXxEndZJAzN3Sldy39rw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inria Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inriaserif/v17/fC1lPYxPY3rXxEndZJAzN3Srdy0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inria Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inriaserif/v17/fC14PYxPY3rXxEndZJAzN3wQUjjMjl2daw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inria Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inriaserif/v17/fC14PYxPY3rXxEndZJAzN3wQUjjCjl0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/instrumentsans/v3/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0She1YmV.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/instrumentsans/v3/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0SZe1Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/instrumentsans/v3/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0She1YmV.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/instrumentsans/v3/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0SZe1Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Julius Sans One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/juliussansone/v19/1Pt2g8TAX_SGgBGUi0tGOYEga5WOzHsX2aE.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Julius Sans One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/juliussansone/v19/1Pt2g8TAX_SGgBGUi0tGOYEga5WOwnsX.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Platypi';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/platypi/v5/bMromSGU7pMlaX6-PAmuwBQP4Hwe02JB4q9rsRkXYA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Platypi';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/platypi/v5/bMromSGU7pMlaX6-PAmuwBQP4Hwe02JB4q9qsRkXYA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Platypi';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/platypi/v5/bMromSGU7pMlaX6-PAmuwBQP4Hwe02JB4q9ksRk.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmZiArmlw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmQiArmlw.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmYiArmlw.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmXiArmlw.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVnoiArmlw.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVn6iArmlw.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmbiArmlw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmaiArmlw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v48/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiAo.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* devanagari */
+@font-face {
+  font-family: 'Inknut Antiqua';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/inknutantiqua/v15/Y4GRYax7VC4ot_qNB4nYpBdaKU2Hx4j_Zhs4YA.woff2) format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0-A8FF, U+11B00-11B09;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inknut Antiqua';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/inknutantiqua/v15/Y4GRYax7VC4ot_qNB4nYpBdaKU2Hx4jwZhs4YA.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inknut Antiqua';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/inknutantiqua/v15/Y4GRYax7VC4ot_qNB4nYpBdaKU2Hx4j-Zhs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Jomhuria';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/jomhuria/v22/Dxxp8j-TMXf-llKur1b8OuCrCw.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Jomhuria';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/jomhuria/v22/Dxxp8j-TMXf-llKur1byOuA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SeW4Ep0.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_QOW4Ep0.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_R-W4Ep0.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_S-W4Ep0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_SuW4Ep0.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/robotomono/v30/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/DpPBYI0sL4fYLgAkX8KXOPVt7c.woff2"); font-display: swap; font-style: normal; font-weight: 700; unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/4RAEQdEOrcnDkhHiiCbJOw92Lk.woff2"); font-display: swap; font-style: normal; font-weight: 700; unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116 }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/1K3W8DizY3v4emK8Mb08YHxTbs.woff2"); font-display: swap; font-style: normal; font-weight: 700; unicode-range: U+1F00-1FFF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/tUSCtfYVM1I1IchuyCwz9gDdQ.woff2"); font-display: swap; font-style: normal; font-weight: 700; unicode-range: U+0370-03FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/VgYFWiwsAC5OYxAycRXXvhze58.woff2"); font-display: swap; font-style: normal; font-weight: 700; unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/DXD0Q7LSl7HEvDzucnyLnGBHM.woff2"); font-display: swap; font-style: normal; font-weight: 700; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/GIryZETIX4IFypco5pYZONKhJIo.woff2"); font-display: swap; font-style: normal; font-weight: 700; unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/5vvr9Vy74if2I6bQbJvbw7SY1pQ.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/EOr0mi4hNtlgWNn9if640EZzXCo.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116 }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/Y9k9QrlZAqio88Klkmbd8VoMQc.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+1F00-1FFF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/OYrD2tBIBPvoJXiIHnLoOXnY9M.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0370-03FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/JeYwfuaPfZHQhEG8U5gtPDZ7WQ.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/vQyevYAyHtARFwPqUzQGpnDs.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/b6Y37FthZeALduNqHicBT6FutY.woff2"); font-display: swap; font-style: normal; font-weight: 400; unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/CfMzU8w2e7tHgF4T4rATMPuWosA.woff2"); font-display: swap; font-style: italic; font-weight: 400; unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/867QObYax8ANsfX4TGEVU9YiCM.woff2"); font-display: swap; font-style: italic; font-weight: 400; unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116 }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/Oyn2ZbENFdnW7mt2Lzjk1h9Zb9k.woff2"); font-display: swap; font-style: italic; font-weight: 400; unicode-range: U+1F00-1FFF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/cdAe8hgZ1cMyLu9g005pAW3xMo.woff2"); font-display: swap; font-style: italic; font-weight: 400; unicode-range: U+0370-03FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/DOfvtmE1UplCq161m6Hj8CSQYg.woff2"); font-display: swap; font-style: italic; font-weight: 400; unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/vFzuJY0c65av44uhEKB6vyjFMg.woff2"); font-display: swap; font-style: italic; font-weight: 400; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/tKtBcDnBMevsEEJKdNGhhkLzYo.woff2"); font-display: swap; font-style: italic; font-weight: 400; unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/hyOgCu0Xnghbimh0pE8QTvtt2AU.woff2"); font-display: swap; font-style: normal; font-weight: 600; unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/NeGmSOXrPBfEFIy5YZeHq17LEDA.woff2"); font-display: swap; font-style: normal; font-weight: 600; unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116 }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/oYaAX5himiTPYuN8vLWnqBbfD2s.woff2"); font-display: swap; font-style: normal; font-weight: 600; unicode-range: U+1F00-1FFF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/lEJLP4R0yuCaMCjSXYHtJw72M.woff2"); font-display: swap; font-style: normal; font-weight: 600; unicode-range: U+0370-03FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/cRJyLNuTJR5jbyKzGi33wU9cqIQ.woff2"); font-display: swap; font-style: normal; font-weight: 600; unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/1ZFS7N918ojhhd0nQWdj3jz4w.woff2"); font-display: swap; font-style: normal; font-weight: 600; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD }
+@font-face { font-family: "Inter"; src: url("https://framerusercontent.com/assets/A0Wcc7NgXMjUuFdquHDrIZpzZw0.woff2"); font-display: swap; font-style: normal; font-weight: 600; unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB }
+@font-face { font-family: "Buenard Placeholder"; src: local("Times New Roman"); ascent-override: 101.73%; descent-override: 26.64%; line-gap-override: 0.00%; size-adjust: 101.34% }
+@font-face { font-family: "Cantata One Placeholder"; src: local("Times New Roman"); ascent-override: 77.71%; descent-override: 21.33%; line-gap-override: 0.00%; size-adjust: 128.18% }
+@font-face { font-family: "Roboto Placeholder"; src: local("Arial"); ascent-override: 92.43%; descent-override: 24.32%; line-gap-override: 0.00%; size-adjust: 100.37% }
+@font-face { font-family: "Inknut Antiqua Placeholder"; src: local("Times New Roman"); ascent-override: 124.60%; descent-override: 64.09%; line-gap-override: 0.00%; size-adjust: 136.68% }
+@font-face { font-family: "Besley Placeholder"; src: local("Times New Roman"); ascent-override: 101.05%; descent-override: 34.36%; line-gap-override: 0.00%; size-adjust: 123.71% }
+@font-face { font-family: "Inria Serif Placeholder"; src: local("Times New Roman"); ascent-override: 85.76%; descent-override: 19.59%; line-gap-override: 0.00%; size-adjust: 113.81% }
+@font-face { font-family: "Platypi Placeholder"; src: local("Times New Roman"); ascent-override: 92.11%; descent-override: 20.55%; line-gap-override: 0.00%; size-adjust: 122.14% }
+@font-face { font-family: "Inder Placeholder"; src: local("Arial"); ascent-override: 93.08%; descent-override: 23.73%; line-gap-override: 0.00%; size-adjust: 107.02% }
+@font-face { font-family: "Instrument Sans Placeholder"; src: local("Arial"); ascent-override: 93.97%; descent-override: 24.22%; line-gap-override: 0.00%; size-adjust: 103.22% }
+@font-face { font-family: "Crimson Text Placeholder"; src: local("Times New Roman"); ascent-override: 98.32%; descent-override: 36.31%; line-gap-override: 0.00%; size-adjust: 96.55% }
+@font-face { font-family: "Julius Sans One Placeholder"; src: local("Arial"); ascent-override: 69.33%; descent-override: 18.32%; line-gap-override: 0.00%; size-adjust: 124.47% }
+@font-face { font-family: "Inclusive Sans Placeholder"; src: local("Arial"); ascent-override: 88.88%; descent-override: 23.39%; line-gap-override: 0.00%; size-adjust: 106.88% }
+@font-face { font-family: "Inter Placeholder"; src: local("Arial"); ascent-override: 89.79%; descent-override: 22.36%; line-gap-override: 0.00%; size-adjust: 107.89% }
+        
+    </style>
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <!-- Start of headEnd -->
+    
+    <!-- End of headEnd -->
+</head>
+<body>
+    <script async src="https://events.framer.com/script?v=2" data-fid="b808bfd31b37fe9ecfc3401df694435a683d3dc998104e8b83e813433db16584" data-no-nt></script>
+    <!-- Start of bodyStart -->
+    
+    <!-- End of bodyStart -->
+    <div id="main"></div>
+    <script >!function(){function c(t,r){let e=r.indexOf("#"),n=e===-1?r:r.substring(0,e),o=e===-1?"":r.substring(e),a=n.indexOf("?");if(a===-1)return n+t+o;let d=new URLSearchParams(t),h=n.substring(a+1),s=new URLSearchParams(h);for(let[i,m]of d)s.has(i)||s.append(i,m);return n.substring(0,a+1)+s.toString()+o}var l='div#main a[href^="#"],div#main a[href^="/"],div#main a[href^="."]',u="div#main a[data-framer-preserve-params]",f,g=(f=document.currentScript)==null?void 0:f.hasAttribute("data-preserve-internal-params");if(window.location.search&&!/bot|-google|google-|yandex|ia_archiver|crawl|spider/iu.test(navigator.userAgent)){let t=document.querySelectorAll(g?`${l},${u}`:u);for(let r of t){let e=c(window.location.search,r.href);r.setAttribute("href",e)}}
+}()</script>
+    
+    <div id="__framer-badge-container"></div>
+    <script data-framer-appear-animation="no-preference"></script>
+    <script type="module" async data-framer-bundle="main">
+        import * as Framer from "framer";
+import * as React from "react";
+import { createPortal } from "react-dom";
+import * as ReactDOM from "react-dom/client";
+
+        const routes = {augiA20Il: {elements: {}, page: Framer.lazy(() => import("https://framerusercontent.com/modules/l1lmz71w2gpBycrE0L0n/NTo2Hr0TIMME4uLjPBCq/augiA20Il.js")), path: "/"}, nNOJsMFzV: {elements: {}, page: Framer.lazy(() => import("https://framerusercontent.com/modules/sbO4GlpFfq7t24dbsux0/5WGVVpuyVOSR2kjL6Lhg/nNOJsMFzV.js")), path: "/pricing"}, bBFZpT_BG: {elements: {}, page: Framer.lazy(() => import("https://framerusercontent.com/modules/yvyMqnD8o5MTv6YA4rcv/tvgjyTiPZ3r44RJ8eM4G/bBFZpT_BG.js")), path: "/about"}, t1oSjfC2q: {elements: {}, page: Framer.lazy(() => import("https://framerusercontent.com/modules/ce3Uj60GKfL3q7GoBPqw/MCTRtegHMfNoCup0qJ4T/t1oSjfC2q.js")), path: "/contact"}, uxL6_hi27: {elements: {}, page: Framer.lazy(() => import("https://framerusercontent.com/modules/p8y6DVnUgm4X81Mb5W1k/ERjW96LBcsp9iqfffmNI/uxL6_hi27.js")), path: "/day-to-dusk"}}
+
+        const locales = [{code: "en-US", id: "default", name: "English", slug: ""}]
+        const collectionUtils = {}
+        const framerSiteId = "b808bfd31b37fe9ecfc3401df694435a683d3dc998104e8b83e813433db16584"
+        
+
+        export async function getPageRoot({ routeId, pathVariables, localeId }) {
+            const rootPreload = routes[routeId].page.preload()
+
+            const content = React.createElement(
+                Framer.PageRoot,
+                {
+                    isWebsite: true,
+                    routeId,
+                    pathVariables,
+                    routes,
+                    collectionUtils,
+                    framerSiteId,
+                    notFoundPage: Framer.lazy(() => import("__framer-not-found-page")),
+                    isReducedMotion: undefined,
+                    localeId,
+                    locales,
+                    preserveQueryParams: undefined,
+                    siteCanonicalURL: "https://earlier-hand-566928.framer.app",
+                    EditorBar: 
+typeof window !== "undefined" ? (() => {
+    const isBot = /bot|-google|google-|yandex|ia_archiver|crawl|spider/iu.test(navigator.userAgent)
+    if (isBot) return
+
+    return Framer.lazy(async () => {
+        const dependencies = {
+            __version: 1,
+            framer: {
+                useCurrentRoute: Framer.useCurrentRoute,
+                useLocaleInfo: Framer.useLocaleInfo,
+                useRouter: Framer.useRouter,
+            },
+            react: {
+                createElement: React.createElement,
+                memo: React.memo,
+                useCallback: React.useCallback,
+                useEffect: React.useEffect,
+                useRef: React.useRef,
+                useState: React.useState,
+            },
+            "react-dom": { createPortal },
+        }
+
+        window.__framer_editorBarDependencies = dependencies
+
+        const { createEditorBar } = await import("https://edit.framer.com/init.mjs")
+        return {
+            default: createEditorBar({ dependencies }),
+        }
+    })
+})() : undefined
+,
+                    
+                }
+            )
+
+            const contentWithFeaturesContext = React.createElement(
+                Framer.LibraryFeaturesProvider,
+                {
+                    children: content,
+                    value: {editorBarDisableFrameAncestorsSecurity: false, editorBarOnPageEditing: false, editorBarSendEmails: false, motionDivToDiv: false, motionDivToDivBackgroundImage: true, pauseOffscreen: true, replaceNestedLinks: true, yieldOnTap: false}
+                }
+            )
+
+            const contentWithGracefullyDegradingErrorBoundary = React.createElement(Framer.GracefullyDegradingErrorBoundary, {
+                children: contentWithFeaturesContext
+            })
+
+            
+            const page = React.createElement(Framer.PageEffectsProvider, {
+                children: contentWithGracefullyDegradingErrorBoundary,
+                value: {routes: {}}
+            })
+
+            // We don't want the initial render to immediately have to suspend.
+            await rootPreload
+            return page
+        }
+
+        const isBrowser = typeof document !== "undefined"
+        if (isBrowser) {
+            window.__framer_importFromPackage = (packageAndFilename, exportIdentifier) => () => {
+                return React.createElement(Framer.ErrorPlaceholder, { error: 'Package component not supported: "' + exportIdentifier + '" in "' + packageAndFilename + '"' })
+            }
+
+            // A lot of libraries assume process.env.NODE_ENV is present in runtime/buildtime, so we are polyfilling it
+            window.process = {
+                ...window.process,
+                env: {
+                    ...(window.process ? window.process.env: undefined),
+                    NODE_ENV: "production"
+                }
+            }
+
+            window.__framer_events = window.__framer_events || []
+
+            // Fallback support for stack gaps
+            Framer.installFlexboxGapWorkaroundIfNeeded()
+
+            const container = document.getElementById("main")
+            // We know that #main is parsed before this script, so we don't need to wait for DOMContentLoaded or similar events.
+            if ("framerHydrateV2" in container.dataset) main(true, container)
+            else main(false, container)
+        }
+
+        function track() {
+            if (!isBrowser) return
+            window.__framer_events.push(arguments)
+        }
+
+        async function main(shouldHydrate, container) {
+            function handleError(error, errorInfo, recoverable = true) {
+                if (error.caught || window.__framer_hadFatalError) return // we already logged it
+
+                const componentStack = errorInfo?.componentStack
+                if (recoverable) {
+                    console.warn("Recoverable error has happened. Please check any custom code or code overrides to fix server/client mismatches:\n", error, componentStack)
+                    // we only want to collect 1%, because this can be quite noisy (floods the data pipeline)
+                    if (Math.random() > 0.01) return
+                } else {
+                    console.error("Fatal crash has happened. If you are the author of this website, please report this issue to the Framer team via https://www.framer.community/:\n", error, componentStack)
+                }
+                track(recoverable ? "published_site_load_recoverable_error" : "published_site_load_error", {
+                    message: String(error),
+                    componentStack, // componentStack is more useful
+                    stack: componentStack ? undefined : error instanceof Error && typeof error.stack === "string" ? error.stack : null,
+                })
+            }
+
+            try {
+                let routeId, localeId, pathVariables, breakpoints
+                if (shouldHydrate) {
+                    const routeData = JSON.parse(container.dataset["framerHydrateV2"])
+                    routeId = routeData.routeId
+                    localeId = routeData.localeId
+                    pathVariables = routeData.pathVariables
+                    breakpoints = routeData.breakpoints
+
+                    routeId = Framer.patchRoutesForABTesting(routes, routeId) // Prioritize optimized route id to avoid flickering in browsers not supporting the server-timing header (Safari older than 16.4)
+                } else {
+                    Framer.patchRoutesForABTesting(routes, undefined) // This must happen before inferInitialRouteFromPath
+
+                    const routeData = Framer.inferInitialRouteFromPath(routes, decodeURIComponent(location.pathname), true, locales)
+                    routeId = routeData.routeId
+                    localeId = routeData.localeId
+                    pathVariables = routeData.pathVariables
+                }
+
+                const pagePromise = getPageRoot({ routeId, localeId, pathVariables })
+
+                
+if (typeof window !== "undefined") {
+    void (async () => {
+        const route = routes[routeId]
+
+        const defaultLocaleId = "default"
+        const framerLocale = locales.find(({ id }) => !localeId ? id === defaultLocaleId : id === localeId).code
+
+        let collectionItemId = null
+        if (route?.collectionId && collectionUtils) {
+              const utils = await collectionUtils[route.collectionId]?.()
+              const [slug] = Object.values(pathVariables)
+              if (utils && typeof slug === "string") {
+                  collectionItemId = (await utils.getRecordIdBySlug(slug, framerLocale || undefined)) ?? null
+              }
+        }
+
+        const resolvedDateTimeOptions = Intl.DateTimeFormat().resolvedOptions()
+        const timezone = resolvedDateTimeOptions.timeZone
+        const locale = resolvedDateTimeOptions.locale
+
+        // wait for the page to be activated before sending the pageview event
+        // https://developer.chrome.com/docs/web-platform/prerender-pages#impact-on-analytics
+        await new Promise((resolve) => {
+            if (document.prerendering) {
+                document.addEventListener("prerenderingchange", resolve, { once: true })
+            } else {
+                resolve()
+            }
+        })
+
+        window.__framer_events.push([
+            "published_site_pageview",
+            {
+                framerSiteId: framerSiteId ?? null,
+                routePath: route?.path || "/",
+                collectionItemId,
+                framerLocale: framerLocale || null,
+                webPageId: route?.abTestingVariantId ?? routeId,
+                abTestId: route?.abTestId,
+                referrer: document.referrer || null,
+                url: window.location.href,
+                hostname: window.location.hostname || null,
+                pathname: window.location.pathname || null,
+                hash: window.location.hash || null,
+                search: window.location.search || null,
+                timezone,
+                locale,
+            },
+            "eager"
+        ])
+
+        // Yield to avoid blocking the main thread with the user code
+        await Framer.yieldToMain({ priority: "background", ensureContinueBeforeUnload: true, continueAfter: "paint" })
+
+        document.dispatchEvent(new CustomEvent("framer:pageview", {
+            detail: { framerLocale: framerLocale || null }
+        }))
+    })()
+}
+
+
+                const page = await pagePromise
+                if (shouldHydrate) {
+                    
+
+                    Framer.withPerformanceMarks("framer-rewrite-breakpoints", () => {
+                        Framer.removeHiddenBreakpointLayersV2(breakpoints)
+                        window.__framer_onRewriteBreakpoints?.(breakpoints)
+                    })
+
+                    
+
+                    const startTransition = React.startTransition
+                    startTransition(() => {
+                        Framer.markHydrationStart()
+                        if (true) Framer.turnOffReactEventHandling()
+                        ReactDOM.hydrateRoot(container, page, { onRecoverableError: handleError })
+                    })
+                } else {
+                    
+                    ReactDOM.createRoot(container, { onRecoverableError: handleError }).render(page)
+                }
+            } catch (error) {
+                handleError(error, undefined, false)
+                throw error
+            }
+        }
+
+        
+
+        
+        ;(function () {
+            if (!isBrowser) return
+
+            React.startTransition(() => {
+                ReactDOM.createRoot(document.getElementById("__framer-badge-container")).render(React.createElement(React.Suspense, {},
+                    React.createElement(Framer.withStyleAppearEffect(Framer.Container), {
+                        className: "__framer-badge",
+                        __framer__threshold: 0.5,
+                        __framer__animateOnce: true,
+                        __framer__opacity: 0,
+                        __framer__targetOpacity: 1,
+                        __framer__rotate: 0,
+                        __framer__x: 0,
+                        __framer__y: 10,
+                        __framer__scale: 1,
+                        __framer__transition: {
+                            "type": "spring",
+                            "ease": [0.44, 0, 0.56, 1],
+                            "duration": 0.3,
+                            "delay": 1,
+                            "stiffness": 350,
+                            "damping": 40,
+                            "mass": 1.5
+                        },
+                        __framer__rotateX: 0,
+                        __framer__rotateY: 0,
+                        __framer__perspective: 1200,
+                    }, React.createElement(React.lazy(() => import("__framer-badge")))
+                    )
+                ))
+            })
+        })()
+    </script>
+    <!-- Start of bodyEnd -->
+    
+    <!-- End of bodyEnd -->
+</body>
+</html>
